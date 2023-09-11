@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+@media screen and (max-width:600px) {
+  #main #hometext{
+    display: flex;
+    align-items: center;
+  
+    width: 100%;
+    height: 100%;
+  
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.753) 75%, transparent);
+  }
+
+  #main #home p{
+    display: flex;
+    align-items: center;
+  
+    font-size:9vw;
+    font-family: var(--fontsunday);
+    color: var(--Corwhite);
+  
+    translate: 80px 20px;
+    width: 150px;
+    height: 200px;
+  }
+}
+
+@font-face {
+  font-family: 'blanka';
+  src: url(fonts/Blanka.otf);
+}
+@font-face {
+  font-family: 'hind';
+  src: url(fonts/Hind.ttf);
+}
+@font-face {
+  font-family: 'sunday';
+  src: url(fonts/Sunday\ Mango.ttf);
+}
+
+
+
+:root{
+
+  /*COR*/
+
+  --Corwhite:#ffff;
+  --Cormarromclaro:#F79854;
+  --Cormarrom:#8F5C38;
+  /*FONTS*/
+
+  --fontblanka:'blanka';
+  --fonthind:'hind';
+  --fontsunday:'sunday';
+  
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  text-decoration: none;
+}
+body{
+  position: relative;
+  width: 100dvw;
+}
+
+
+/*HEADER*/
+header{
+  width:100dvw;
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+#nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  height: 85px;
+  background:var(--Corwhite);
+}
+#navimg{
+  width: 300px;
+  height: 100%;
+
+  background: transparent url(imagens/marcenarialogo.png) center center no-repeat;
+  background-size:cover;
+  /*backgroud:
+  color > image > position > repeat  > attachmente*/
+}
+#navlinks{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 300px;
+  height: 100%;
+}
+#navlinks a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 30px;
+  font-family: var(--fontblanka);
+  color: var(--Cormarrom);
+  transition-duration: 2s;
+}
+#navlinks a:hover{
+  border-bottom: 1px solid var(--Cormarromclaro);
+}
+
+
+/*MAIN*/
+main{
+  width: 100dvw;
+  height: 100%;
+}
+#home{
+  display: flex;
+  align-items: center;
+
+  width: 100dvw;
+  height: 100dvh;
+
+  background:url(imagens/movel2.jpeg) center center no-repeat;
+  background-size: cover;
+}
+#hometext{
+  display: flex;
+  align-items: center;
+
+  width: 70%;
+  height: 100%;
+
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.753) 65%, transparent);
+}
+#home p{
+  display: flex;
+  align-items: center;
+
+  font-size:4em;
+  font-family: var(--fontsunday);
+  color: var(--Corwhite);
+
+  translate: 80px 30px;
+  width: 250px;
+  height: 200px;
+}
