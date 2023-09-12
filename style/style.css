@@ -91,6 +91,8 @@
 body{
   position: relative;
   max-width: 100vw;
+
+  overflow-x: hidden;
 }
 
 
@@ -199,4 +201,29 @@ main{
   translate: 80px 30px;
   width: 250px;
   height: 200px;
+}
+
+/*SOBRE*/
+#sobre{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100vh;
+}
+#sobre h1{
+  font-family: var(--fontsunday);
+  font-size: 5em;
+  color: var(--Cormarrom);
+
+  translate: 0px -60px;
+}
+#sobre p{
+  font-family: var(--fonthind);
+  text-indent: 20px;
+  font-size: 25px;
+  width: 80%;
+  max-width: 600px;
 }
