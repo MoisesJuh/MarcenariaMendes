@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 @media screen and (max-width:600px) {
+
   #main #hometext{
     display: flex;
     align-items: center;
@@ -43,13 +44,12 @@
   #nav #icon i{
     display: flex;
     color: var(--Cormarrom);
-    
+
     font-size: 2em;
     cursor: pointer;
+    rotate: 90deg;
 
-    translate: -70px 20px;
-
-    text-shadow:0px 0px 10px black;
+    text-shadow:0px 0px 12px black;
   }
 }
 
@@ -92,14 +92,12 @@
 body{
   position: relative;
   max-width: 100vw;
-
-  overflow-x: hidden;
 }
 
 
 /*HEADER*/
 header{
-  width:100dvw;
+  max-width: 100vw;
 
   position: absolute;
   top: 0px;
@@ -112,7 +110,7 @@ header{
   justify-content: space-around;
   align-items: center;
 
-  width: 100%;
+  width: 100vw;
   height: 85px;
   background:var(--Corwhite);
 }
@@ -126,7 +124,7 @@ header{
   color > image > position > repeat  > attachmente*/
 }
 #navimg a{
-  width: 300px;
+  width: 30vw;
   height: 100%;
 }
 #navlinks{
@@ -135,7 +133,7 @@ header{
   justify-content: space-around;
   align-items: center;
 
-  width: 300px;
+  width: 40vw;
   height: 100%;
 }
 #navlinks a{
@@ -152,15 +150,16 @@ header{
   border-bottom: 1px solid var(--Cormarromclaro);
 }
 #icon{
-  display: flex;
+  position: absolute;
+  top: 40px;
+  right: 20px;
+
   height: 100%;
 
-  translate: 20px;
+  translate: 0px;
 }
 #icon i{
   display: none;
-  color: var(--Cormarrom);
-  font-size: 2em;
 }
 
 
@@ -173,7 +172,7 @@ main{
   display: flex;
   align-items: center;
 
-  width: 100dvw;
+  max-width: 100dvw;
   height: 100dvh;
 
   background:url(imagens/movel2.jpeg) center center no-repeat;
@@ -183,10 +182,10 @@ main{
   display: flex;
   align-items: center;
 
-  width: 70%;
+  width: 20%;
   height: 100%;
 
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.753) 65%, transparent);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.753) 75%, transparent);
 }
 #home p{
   display: flex;
