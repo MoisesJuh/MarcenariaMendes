@@ -172,7 +172,7 @@ main{
   align-items: center;
 
   max-width: 100dvw;
-  height: 100dvh;
+  height: 100vh;
 
   background:url(imagens/movel2.jpeg) center center no-repeat;
   background-size: cover;
