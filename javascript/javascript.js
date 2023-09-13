@@ -1,5 +1,6 @@
 const i_menu=document.getElementById("iconmenu")
 const navmenu=document.getElementById("navmenu")
+const main=document.getElementById("main")
 
 
 /* FUNCOES */
@@ -36,6 +37,16 @@ i_menu.addEventListener(('click'),()=>{
 window.addEventListener('resize',VerificarWidthTela)
 VerificarWidthTela()
 
+
+/* para fechar o menu quando clicar fora */
+
+main.addEventListener('click',()=>{
+  if(window.innerWidth < 600){
+    navmenu.style.display=('none')
+    i_menu.classList.remove('fa-times')
+    i_menu.classList.add('fa-bars')
+  }
+})
 
 
 
