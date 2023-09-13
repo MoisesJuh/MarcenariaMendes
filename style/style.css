@@ -2,28 +2,10 @@
 
 @media screen and (max-width:600px) {
 
-  #main #hometext{
-    display: flex;
-    align-items: center;
   
-    width: 100%;
-    height: 100%;
-  
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.753) 75%, transparent);
-  }
 
-  #main #home p{
-    display: flex;
-    align-items: center;
-  
-    font-size:9vw;
-    font-family: var(--fontsunday);
-    color: var(--Corwhite);
-  
-    translate: 80px 20px;
-    width: 150px;
-    height: 200px;
-  }
+  /*------------------HEADER--------------*/
+
   #header{
     position: none;
     top: 20px;
@@ -68,6 +50,40 @@
 
     text-shadow:0px 0px 15px rgba(0, 0, 0, 0.493);
   }
+
+  /*--------------------------------------*/
+
+
+
+  /*------------------HOME--------------*/
+
+  #main #hometext{
+    display: flex;
+    align-items: center;
+  
+    width: 100%;
+    height: 100%;
+  
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.753) 75%, transparent);
+  }
+  #main #home p{
+    display: flex;
+    align-items: center;
+  
+    font-size:9vw;
+    font-family: var(--fontsunday);
+    color: var(--Corwhite);
+  
+    translate: 80px 20px;
+    width: 150px;
+    height: 200px;
+  }
+  /*--------------------------------------*/
+
+  #main #sobre p{
+    font-size: 5px;
+  }
+  
 }
 
 @font-face {
@@ -155,7 +171,7 @@ header{
   justify-content: space-around;
   align-items: center;
 
-  width: 40vw;
+  width: 50vw;
   height: 100%;
 
   background-color: var(--Corwhite);
@@ -165,7 +181,7 @@ header{
   justify-content: center;
   align-items: center;
 
-  height: 30px;
+  height: 40px;
   font-family: var(--fontblanka);
   color: var(--Cormarrom);
   transition-duration: 2s;
