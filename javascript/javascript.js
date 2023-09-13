@@ -1,9 +1,22 @@
+
+/* -----------------VARIAVEIS------------------- */
+
+// -------------------menu-----------------
+
 const i_menu=document.getElementById("iconmenu")
 const navmenu=document.getElementById("navmenu")
 const main=document.getElementById("main")
 
 
-/* FUNCOES */
+// -------------------sobre-----------------
+const trabalhos=document.getElementById("trabalhos")
+
+/* -------------------------------------------- */
+
+
+
+
+/* ------------------FUNCOES------------------- */
 
 /* alternar entre os icons */
 function Alternar(){
@@ -29,6 +42,7 @@ function VerificarWidthTela(){
   }
 }
 
+/* ------------------------------------- */
 
 i_menu.addEventListener(('click'),()=>{
   Alternar()

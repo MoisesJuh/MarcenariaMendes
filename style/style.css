@@ -1,8 +1,30 @@
 @charset "UTF-8";
 
-@media screen and (max-width:600px) {
+/*------------------FONTES--------------*/
 
-  
+@font-face {
+  font-family: 'blanka';
+  src: url(fonts/Blanka.otf);
+}
+@font-face {
+  font-family: 'hind';
+  src: url(fonts/Hind.ttf);
+}
+@font-face {
+  font-family: 'sunday';
+  src: url(fonts/Sunday\ Mango.ttf);
+}
+@font-face {
+  font-family: 'bogimber';
+  src: url(fonts/Bogimber.ttf);
+}
+
+/*------------------------------------*/
+
+
+
+
+@media screen and (max-width:600px) {
 
   /*------------------HEADER--------------*/
 
@@ -80,26 +102,23 @@
   }
   /*--------------------------------------*/
 
+
+  /*------------------SOBRE--------------*/
+
   #main #sobre p{
-    font-size: 5px;
+    font-size: 19px;
+    text-align: justify;
   }
+
+  /*--------------------------------------*/
   
 }
 
-@font-face {
-  font-family: 'blanka';
-  src: url(fonts/Blanka.otf);
-}
-@font-face {
-  font-family: 'hind';
-  src: url(fonts/Hind.ttf);
-}
-@font-face {
-  font-family: 'sunday';
-  src: url(fonts/Sunday\ Mango.ttf);
-}
 
 
+
+
+/*------------------ROOT--------------*/
 
 :root{
 
@@ -113,8 +132,14 @@
   --fontblanka:'blanka';
   --fonthind:'hind';
   --fontsunday:'sunday';
+  --fontbogimber:'bogimber'
   
 }
+
+/*-----------------------------------*/
+
+
+
 
 *{
   margin: 0px;
@@ -130,7 +155,8 @@ body{
 }
 
 
-/*HEADER*/
+/*-------------------HEADER------------------*/
+
 header{
   width: 100%;
 
@@ -147,39 +173,34 @@ header{
   align-items: center;
 
   width: 100%;
-  height: 85px;
+  height: 100px;
   background:var(--Corwhite);
 }
+
 #navimg{
   width: 300px;
   height: 100%;
 
   background: transparent url(imagens/marcenarialogo.png) center center no-repeat;
   background-size:cover;
-  /*backgroud:
-  color > image > position > repeat  > attachmente*/
 
-  background-color: var(--Corwhite);
 }
-#navimg a{
-  width: 30vw;
-  height: 100%;
-}
+
 #navlinks{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 
-  width: 50vw;
+  width: 40vw;
   height: 100%;
 
-  background-color: var(--Corwhite);
 }
 #navlinks a{
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 20px;
 
   height: 40px;
   font-family: var(--fontblanka);
@@ -270,16 +291,25 @@ header{
   color: var(--Cormarromclaro);
 }
 
+/*------------------------------------------*/
 
 
 
-/*MAIN*/
+
+/*-------------------MAIN------------------*/
+
 main{
   width: 100dvw;
   height: 100%;
 }
 
-/*HOME*/
+/*-----------------------------------------*/
+
+
+
+
+/*-------------------HOME------------------*/
+
 #home{
   display: flex;
   align-items: center;
@@ -312,7 +342,13 @@ main{
   height: 200px;
 }
 
-/*SOBRE*/
+/*-----------------------------------------*/
+
+
+
+
+/*------------------SOBRE-------------------*/
+
 #sobre{
   display: flex;
   flex-direction: column;
@@ -321,18 +357,50 @@ main{
 
   width: 100%;
   height: 100vh;
+  gap: 0px;
 }
 #sobre h1{
-  font-family: var(--fontsunday);
-  font-size: 5em;
+  font-family: var(--fontbogimber);
+  font-size: 4em;
   color: var(--Cormarrom);
-
-  translate: 0px -60px;
 }
 #sobre p{
   font-family: var(--fonthind);
-  text-indent: 20px;
   font-size: 25px;
+  
+  text-align: justify;
+  text-indent: 15px;
   width: 80%;
-  max-width: 600px;
+  max-width: 840px;
+}
+
+/*------------------------------------------*/
+
+
+
+
+/*----------------TRABALHOS-------------------*/
+
+#trabalhos{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  width: 100%;
+  height: 100vh;
+}
+
+.trabalhosdivs{
+  width: 100px;
+  height: 200px;
+
+  border: 1px solid black;
+}
+
+.centro{
+  width: 250px;
+  height: 400px;
+  border-radius: 30px 30px;
 }
