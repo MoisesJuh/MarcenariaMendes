@@ -122,10 +122,11 @@
     height: 100vh;
   }
   #trabalhos .trabalhogeral{
+    flex-direction: column;
     gap: 0px;
   }
-  #trabalhos .trabalhogeral i{
-    display: flex;
+  #trabalhos>.trabalhogeral>i{
+    display: none;
   }
   #trabalhos #trabalhosimg{
     display: flex;
@@ -135,8 +136,14 @@
     overflow-x: auto;
     transition-duration: 2s;
     
-    width: 75%;
+    width: 90%;
     height: 350px;
+  }
+  #trabalhos .trabalhogeral p{
+    display: block;
+    font-family: var(--fontbogimber);
+    font-size: 18px;
+    translate: 0px -30px;
   }
 }
 
@@ -413,6 +420,15 @@ main{
   width: 100vw;
   height: 100vh;
 }
+#trabalhos h1{
+  font-family: var(--fontbogimber);
+  font-size: 4em;
+  color: var(--Cormarrom);
+  translate: 0px 70px;
+}
+
+
+
 #trabalhosimg{
   display: flex;
   align-items: center;
@@ -487,10 +503,13 @@ main{
   height: 100%;
   
 }
-.trabalhogeral i{
+.trabalhogeral>i{
   cursor: pointer;
   padding: 5px;
 }
-.trabalhogeral i:hover{
+.trabalhogeral>i:hover{
   color: var(--Cormarromclaro);
+}
+.trabalhogeral>p{
+  display: none;
 }
