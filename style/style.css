@@ -112,6 +112,11 @@
 
   /*--------------------------------------*/
 
+
+
+
+  /*---------------TRABALHOS-------------*/
+
   #trabalhos{
     display: flex;
     flex-direction: column;
@@ -145,6 +150,17 @@
     font-size: 18px;
     translate: 0px -30px;
   }
+
+  /*--------------------------------------*/
+
+  
+  /*-----------------FOOTER---------------*/
+
+  .footer{
+    display: none;
+  }
+
+  /*--------------------------------------*/
 }
 
 
@@ -412,6 +428,7 @@ main{
 /*----------------TRABALHOS-------------------*/
 
 #trabalhos{
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -480,11 +497,15 @@ main{
   background-size: cover;
 }
 #t_div6{
-  background: url(imagens/cama3d.png) center center no-repeat;
+  background: url(imagens/movel6.jpeg) center center no-repeat;
   background-size: cover;
 }
 #t_div7{
   background: url(imagens/guarda3d.png) center center no-repeat;
+  background-size: cover;
+}
+#t_div8{
+  background: url(imagens/cama3d.png) center center no-repeat;
   background-size: cover;
 }
 /*--------------------*/
@@ -513,3 +534,78 @@ main{
 .trabalhogeral>p{
   display: none;
 }
+
+/*------------------------------------------*/
+
+
+
+
+/*----------------FOOTER-------------------*/
+/*
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--Cormarrom);
+  color: var(--Corwhite);
+  height: 50px;
+  translate: 0px -50px;
+}
+
+footer h1{
+  font-family: var(--fontbogimber);
+  font-size: 2em;
+  color: var(--Cormarrom);
+  translate: 0px -15px;
+}
+footer p{
+  font-family: var(--fonthind);
+  translate: 0px -30px;
+}
+#iconfooter{
+  translate: 0px -30px;
+}
+*/
+
+footer{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  background-color: var(--Cormarrom);
+  color: var(--Corwhite);
+}
+footer h1{
+  font-size: 2em;
+  font-family: var(--fontsunday);
+  margin-top: 5px;
+}
+#iconfooter{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  font-family: var(--fonthind);
+  gap: 10px;
+  font-size: 20px;
+}
+#iconfooter i,a{
+  text-shadow: 0px 0px 7px rgba(255, 255, 255, 0.664);
+  color: var(--Corwhite);
+  font-size: 30px;
+}
+#iconfooter i:hover{
+  color: var(--Cormarromclaro);
+}
+
+/*-----------------------------------------*/
