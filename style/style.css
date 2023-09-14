@@ -126,6 +126,9 @@
     width: 100vw;
     height: 100vh;
   }
+  #main #trabalhos h1{
+    translate: 0px 140px;
+  }
   #trabalhos .trabalhogeral{
     flex-direction: column;
     gap: 0px;
