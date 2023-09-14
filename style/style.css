@@ -111,7 +111,33 @@
   }
 
   /*--------------------------------------*/
+
+  #trabalhos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   
+    width: 100vw;
+    height: 100vh;
+  }
+  #trabalhos .trabalhogeral{
+    gap: 0px;
+  }
+  #trabalhos .trabalhogeral i{
+    display: flex;
+  }
+  #trabalhos #trabalhosimg{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    
+    overflow-x: auto;
+    transition-duration: 2s;
+    
+    width: 75%;
+    height: 350px;
+  }
 }
 
 
@@ -149,8 +175,6 @@
 }
 body{
   position: relative;
-  max-width: 100vw;
-
   overflow-x: hidden;
 }
 
@@ -205,7 +229,6 @@ header{
   height: 40px;
   font-family: var(--fontblanka);
   color: var(--Cormarrom);
-  transition-duration: 2s;
 }
 #navlinks a:hover{
   border-bottom: 1px solid var(--Cormarromclaro);
@@ -299,7 +322,7 @@ header{
 /*-------------------MAIN------------------*/
 
 main{
-  width: 100dvw;
+  width: 100vw;
   height: 100%;
 }
 
@@ -383,24 +406,91 @@ main{
 
 #trabalhos{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
 
-  width: 100%;
+  width: 100vw;
   height: 100vh;
 }
+#trabalhosimg{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  flex-direction: row;
 
-.trabalhosdivs{
-  width: 100px;
-  height: 200px;
-
-  border: 1px solid black;
+  
+  width: 80%;
+  height: 500px;
+  gap: 10px;
+  
+  overflow-x: auto;
+  transition-duration: 2s;
+  
+}
+#trabalhosimg::-webkit-scrollbar{
+  background-color: transparent;
+  display: none;
 }
 
-.centro{
-  width: 250px;
-  height: 400px;
-  border-radius: 30px 30px;
+
+.trabalhosdivs{
+  min-width: 200px;
+  height: 300px;
+
+  border: 1px solid black;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.808);
+}
+/*-----AS IMAGENS-----*/
+#t_div1{
+  background: url(imagens/movel1.jpeg) center center no-repeat;
+  background-size: cover;
+}
+#t_div2{
+  background: url(imagens/movel2.jpeg) center center no-repeat;
+  background-size: cover;
+}
+#t_div3{
+  background: url(imagens/movel3.jpeg) center center no-repeat;
+  background-size: cover;
+}
+#t_div4{
+  background: url(imagens/movel4.jpeg) center center no-repeat;
+  background-size: cover;
+}
+#t_div5{
+  background: url(imagens/movel5.jpeg) center center no-repeat;
+  background-size: cover;
+}
+#t_div6{
+  background: url(imagens/cama3d.png) center center no-repeat;
+  background-size: cover;
+}
+#t_div7{
+  background: url(imagens/guarda3d.png) center center no-repeat;
+  background-size: cover;
+}
+/*--------------------*/
+
+.trabalhogeral{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 32px;
+  color: var(--Cormarrom);
+  transition-duration: 1s;
+  
+  width: 100vw;
+  height: 100%;
+  
+}
+.trabalhogeral i{
+  cursor: pointer;
+  padding: 5px;
+}
+.trabalhogeral i:hover{
+  color: var(--Cormarromclaro);
 }

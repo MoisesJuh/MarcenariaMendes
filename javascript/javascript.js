@@ -10,6 +10,9 @@ const main=document.getElementById("main")
 
 // -------------------sobre-----------------
 const trabalhos=document.getElementById("trabalhos")
+const trabalhosimg=document.getElementById("trabalhosimg")
+const i_voltar=document.querySelector(".fa-angle-left")
+const i_avancar=document.querySelector(".fa-angle-right")
 
 /* -------------------------------------------- */
 
@@ -44,12 +47,21 @@ function VerificarWidthTela(){
 
 /* ------------------------------------- */
 
+
+
+
+/* ------------------WINDOW------------------- */
+window.addEventListener('resize',()=>{
+  VerificarWidthTela()
+})
+/* ------------------WINDOW------------------- */
+
+
+/* ------------------MENU------------------- */
+
 i_menu.addEventListener(('click'),()=>{
   Alternar()
 })
-
-window.addEventListener('resize',VerificarWidthTela)
-VerificarWidthTela()
 
 
 /* para fechar o menu quando clicar fora */
@@ -62,6 +74,15 @@ main.addEventListener('click',()=>{
   }
 })
 
+/* ----------------------------------------- */
+
+i_avancar.addEventListener('click',()=>{
+  trabalhosimg.scrollLeft += 420;
+})
+i_voltar.addEventListener('click',()=>{
+  trabalhosimg.scrollLeft -= 420;
+})
 
 
+/* ------------------SOBRE------------------- */
 
