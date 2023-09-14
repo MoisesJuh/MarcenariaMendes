@@ -54,6 +54,7 @@ function VerificarWidthTela(){
 window.addEventListener('resize',()=>{
   VerificarWidthTela()
 })
+VerificarWidthTela()
 /* ------------------WINDOW------------------- */
 
 
@@ -76,13 +77,18 @@ main.addEventListener('click',()=>{
 
 /* ----------------------------------------- */
 
+
+
+
+/* ----------------TRABALHO----------------- */
+
 i_avancar.addEventListener('click',()=>{
   trabalhosimg.scrollLeft += 420;
+  
 })
 i_voltar.addEventListener('click',()=>{
   trabalhosimg.scrollLeft -= 420;
+  
 })
 
-
-/* ------------------SOBRE------------------- */
-
+/* ----------------------------------------- */
