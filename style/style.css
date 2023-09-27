@@ -553,33 +553,6 @@ main{
 
 
 /*----------------FOOTER-------------------*/
-/*
-footer{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  background-color: var(--Cormarrom);
-  color: var(--Corwhite);
-  height: 50px;
-  translate: 0px -50px;
-}
-
-footer h1{
-  font-family: var(--fontbogimber);
-  font-size: 2em;
-  color: var(--Cormarrom);
-  translate: 0px -15px;
-}
-footer p{
-  font-family: var(--fonthind);
-  translate: 0px -30px;
-}
-#iconfooter{
-  translate: 0px -30px;
-}
-*/
 
 footer{
   position: absolute;
